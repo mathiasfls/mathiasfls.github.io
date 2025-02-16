@@ -48,11 +48,12 @@ export default function Home() {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="shrink-0"
         >
           <img
             src="/MF.png"
             alt={PROFILE.name}
-            className="w-[280px] h-[280px] object-cover rounded-lg"
+            className="w-[280px] h-[280px] object-cover rounded-lg shadow-lg"
           />
         </motion.div>
       </div>
@@ -66,6 +67,7 @@ export default function Home() {
       >
         <Card className="bg-white">
           <CardContent className="pt-6">
+            <h2 className="text-2xl font-bold mb-4">About Me</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <p className="text-muted-foreground">{PROFILE.bio[0]}</p>
