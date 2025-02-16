@@ -6,20 +6,76 @@ interface MediaAppearance {
   title: string;
   outlet: string;
   date: string;
-  description: string;
-  url: string;
+  description?: string;
+  url?: string;
   language?: string;
 }
 
 const mediaAppearances: MediaAppearance[] = [
-  // Example media appearances - we'll need to populate this with actual data
   {
-    title: "The Rising Star: Dr. Mathias Felipe de Lima Santos",
+    title: "Rising stars: Ten humanities EMCRs shaping the future",
+    outlet: "The Australian Academy of the Humanities",
+    date: "2024",
+    url: "https://humanities.org.au/power-of-the-humanities/humanities-emcr-named-rising-stars/",
+  },
+  {
+    title: "These eight young rising stars are poised to make their mark",
     outlet: "The Australian",
     date: "2024",
-    description: "Recognition as a rising star in the field of Communication and Cultural Studies by The Australian and The Australian Academy of the Humanities.",
-    url: "#",
-    language: "English"
+    url: "https://www.theaustralian.com.au/special-reports/research-magazine/these-eight-young-rising-stars-are-poised-to-make-their-mark/news-story/951a88d53913fe1476a107306e4915c4",
+  },
+  {
+    title: "Amazon Underworld",
+    outlet: "Radio 2SER",
+    date: "2024",
+    description: "Media Interview about Amazon Underworld investigation",
+    url: "https://2ser.com/amazon-underworld/",
+  },
+  {
+    title: "Google's support for news media in Latin America may lead to dependency",
+    outlet: "LatAm Journalism Review (USA)",
+    date: "2024",
+    description: "Study findings on Google's media support impact",
+  },
+  {
+    title: "Vice e Buzzfeed News: O acidente fatal das plataformas digitais da moda",
+    outlet: "Público (Portugal)",
+    date: "2023",
+    language: "Portuguese",
+  },
+  {
+    title: "ChatGPT, DALL-E and more: how AI impacts the future of creativity",
+    outlet: "TechTudo",
+    date: "2022",
+    language: "Portuguese",
+  },
+  {
+    title: "ChatGPT: Understand how OpenAI's know-it-all chatbot works",
+    outlet: "TechTudo",
+    date: "2022",
+    language: "Portuguese",
+  },
+  {
+    title: "Journalism, AI and satellite imagery",
+    outlet: "Online Journalism Blog",
+    date: "2022",
+  },
+  {
+    title: "Coar fact-checking project focuses on news deserts in Northern and Northeastern Brazil",
+    outlet: "LatAm Journalism Review",
+    date: "2022",
+  },
+  {
+    title: "Data Journalism in Favela",
+    outlet: "Journalism Practice",
+    date: "2021",
+    description: "Podcast episode discussing data journalism practices",
+  },
+  {
+    title: "Freedom of the Press",
+    outlet: "National Radio of Colombia",
+    date: "2021",
+    description: "Interview about press freedom",
   }
 ];
 
@@ -31,7 +87,7 @@ export default function MediaCoverage() {
         animate={{ y: 0, opacity: 1 }}
       >
         <h1 className="text-4xl font-bold text-[#4F46E5] mb-4">Media Coverage</h1>
-        <p className="text-gray-600 mb-8">Notable mentions and appearances in media outlets covering research, expertise, and contributions to the field.</p>
+        <p className="text-gray-600 mb-8">Notable mentions, interviews, and appearances in media outlets covering research, expertise, and contributions to the field.</p>
 
         <div className="space-y-6">
           {mediaAppearances.map((item, index) => (
@@ -57,17 +113,21 @@ export default function MediaCoverage() {
                           </>
                         )}
                       </div>
-                      <p className="text-gray-600">{item.description}</p>
+                      {item.description && (
+                        <p className="text-gray-600">{item.description}</p>
+                      )}
                     </div>
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-primary hover:underline whitespace-nowrap"
-                    >
-                      <span className="text-sm">Read Article</span>
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
+                    {item.url && (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-primary hover:underline whitespace-nowrap"
+                      >
+                        <span className="text-sm">Read More</span>
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>

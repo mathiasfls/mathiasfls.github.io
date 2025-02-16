@@ -19,6 +19,14 @@ const articles = [
     description: "How big tech's 'philanthrocapitalism' could be reshaping the news industry.",
     link: "#",
     image: "https://www.niemanlab.org/images/google-adobe-stock.jpg"
+  },
+  {
+    title: "'Filantrocapitalismo': Dinheiro das big techs está remodelando o jornalismo mundial. Mas a que custo?",
+    publication: "The Conversation Brazil",
+    date: "September 2024",
+    description: "An analysis of how big tech's funding is reshaping global journalism.",
+    link: "https://theconversation.com/filantrocapitalismo-dinheiro-das-big-techs-esta-remodelando-o-jornalismo-mundial-mas-a-que-custo-238124",
+    image: "https://images.theconversation.com/files/618324/original/file-20240909-18-x1asoq.png?ixlib=rb-4.1.0&rect=2%2C2%2C1703%2C954&q=45&auto=format&w=926&fit=clip"
   }
 ];
 
