@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 
@@ -9,7 +9,6 @@ interface PublicationCardProps {
   year: number;
   doi: string;
   scopusRank?: string;
-  journalLogo?: string;
 }
 
 export default function PublicationCard({
@@ -19,35 +18,27 @@ export default function PublicationCard({
   year,
   doi,
   scopusRank,
-  journalLogo,
 }: PublicationCardProps) {
   return (
     <Card className="hover:shadow-lg transition-shadow">
-      <CardHeader className="flex flex-row items-center gap-4">
-        {journalLogo && (
-          <img src={journalLogo} alt={journal} className="h-12 w-12 object-contain" />
-        )}
-        <div className="flex flex-col gap-1">
-          <h3 className="font-semibold">{title}</h3>
-          <p className="text-sm text-muted-foreground">{authors}</p>
-        </div>
-      </CardHeader>
-      <CardContent>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-sm">{journal}</span>
-            <span className="text-sm text-muted-foreground">({year})</span>
-            {scopusRank && (
-              <Badge variant="secondary">{scopusRank}</Badge>
-            )}
+      <CardContent className="pt-6">
+        <div className="flex items-start justify-between gap-4">
+          <div className="space-y-2">
+            <h3 className="font-medium text-lg leading-tight">{title}</h3>
+            <div className="flex items-center gap-2">
+              <span className="text-gray-600">{journal}</span>
+              <span className="text-gray-500">• {year}</span>
+            </div>
+            {scopusRank && <Badge variant="secondary">{scopusRank}</Badge>}
+            <p className="text-sm text-gray-500">{authors}</p>
           </div>
           <a
             href={doi}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:underline inline-flex items-center gap-1"
+            className="flex items-center gap-1 text-primary hover:underline"
           >
-            <span className="text-sm">DOI</span>
+            <span className="text-sm">View Publication</span>
             <ExternalLink className="h-4 w-4" />
           </a>
         </div>
