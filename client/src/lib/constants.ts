@@ -1,9 +1,9 @@
 export const SOCIAL_LINKS = {
-  scholar: "https://scholar.google.com/citations?user=LSsXkUkAAAAJ",
-  orcid: "https://orcid.org/0000-0002-5029-9140",
+  scholar: "https://scholar.google.com/citations?user=aj-6hvcAAAAJ&hl=en&oi=ao",
+  orcid: "https://orcid.org/0000-0001-8879-7381",
   linkedin: "https://www.linkedin.com/in/mathiasfls/",
   github: "https://github.com/mathiasfls",
-  twitter: "https://twitter.com/mathiasfls"
+  twitter: "https://x.com/Mathias_Felipe"
 } as const;
 
 export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzzdjwyv";
