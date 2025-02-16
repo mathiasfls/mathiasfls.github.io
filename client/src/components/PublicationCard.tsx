@@ -15,10 +15,10 @@ interface PublicationCardProps {
 }
 
 function formatAuthors(authors: string) {
-  // Split by comma and wrap "de-Lima-Santos, M.F." in strong tag
+  // Split by comma and wrap "de-Lima-Santos, M.F." in span with font-bold class
   return authors.split(', ').map(author => {
     if (author.trim() === "de-Lima-Santos, M.F.") {
-      return `<strong>${author}</strong>`;
+      return `<span class="font-bold">${author}</span>`;
     }
     return author;
   }).join(', ');
