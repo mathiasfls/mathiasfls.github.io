@@ -64,7 +64,7 @@ export default function Bio() {
               <div>
                 <h3 className="font-semibold">AI Mentor (Consultant)</h3>
                 <p className="text-gray-500">Bastion/Google • Sep 2024 — Now</p>
-                <p className="mt-2">Responsible for mentoring Australian media organizations in the deployment of Generative AI tools in their newsrooms. I have guided companies such as Private Media, Australian Chinese News, North East Media, and Gazette News in adopting AI to improve storytelling, optimize workflows, and enhance audience engagement.</p>
+                <p className="mt-2">Responsible for mentoring Australian media organizations in the deployment of Generative AI tools in their newsrooms. Guiding companies such as Private Media, Australian Chinese News, North East Media, and Gazette News in adopting AI to improve storytelling, optimize workflows, and enhance audience engagement.</p>
               </div>
 
               <div>
@@ -76,25 +76,85 @@ export default function Bio() {
               <div>
                 <h3 className="font-semibold">Senior Researcher (Consultant)</h3>
                 <p className="text-gray-500">International Center for Journalists (ICFJ) • Jan 2024 — Mar 2024</p>
-                <p className="mt-2">Leading a research project on Brazilian news outlets' responses to disinformation and contributing to a broader international study focused on international news organizations. Also adding to the trailblazing ICFJ Online Violence Project which is developing policies and tools to combat the problem of gender-based abuse toward journalists.</p>
+                <p className="mt-2">Leading a research project on Brazilian news outlets' responses to disinformation and contributing to the trailblazing ICFJ Online Violence Project which is developing policies and tools to combat gender-based abuse toward journalists.</p>
               </div>
 
               <div>
                 <h3 className="font-semibold">Postdoctoral Researcher</h3>
                 <p className="text-gray-500">University of Amsterdam — Netherlands • Sep 2022 — Mar 2024</p>
-                <p className="mt-2">Conducting research on Responsible AI as part of the broader Humane (AI) project. Host of the Humane Conversations. Contributing to the overall project in terms of events, research meetings, and guest-lectures. Collaborating with the Horizon Europe project AI4Media, engaging with industry partners like RAI and BSC.</p>
+                <p className="mt-2">Conducting research on Responsible AI as part of the broader Humane (AI) project. Host of the Humane Conversations. Contributing to events, research meetings, and guest-lectures. Collaborating with the Horizon Europe project AI4Media.</p>
               </div>
 
               <div>
                 <h3 className="font-semibold">Research Associate</h3>
                 <p className="text-gray-500">Federal University of São Paulo — Brazil • Jan 2022 — Now</p>
-                <p className="mt-2">Co-founder of the Digital Media and Society Observatory (DMSO), a research and education hub tasked with tackling online harm and information disorder. Delivering new theoretical and practical insights in this field through studies, talks, and media interviews.</p>
+                <p className="mt-2">Co-founder of the Digital Media and Society Observatory (DMSO), a research and education hub tasked with tackling online harm and information disorder. Delivering theoretical and practical insights through studies, talks, and media interviews.</p>
               </div>
 
               <div>
                 <h3 className="font-semibold">Project Manager/Tech Lead</h3>
                 <p className="text-gray-500">InfoAmazonia — Brazil • Jun 2021 — Sep 2023</p>
-                <p className="mt-2">Managing data-driven and web projects for InfoAmazonia and its partners, PlenaMata and Amazon Underworld. PlenaMata is celebrated for combating deforestation and receiving two awards for its innovation. Amazon Underworld is a vast collaborative effort dedicated to investigating criminal activities in the Amazon Forest.</p>
+                <p className="mt-2">Managing data-driven and web projects for InfoAmazonia and its partners, PlenaMata and Amazon Underworld. PlenaMata is celebrated for combating deforestation and receiving two awards for its innovation.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Researcher/Journalist</h3>
+                <p className="text-gray-500">*desinformante — Brazil • July 2021 — Aug 2022</p>
+                <p className="mt-2">Producing content and supporting the team to follow main debates and analysis on events involving efforts against mis-/disinformation in Brazil and globally.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Data Quality Lead Consultant</h3>
+                <p className="text-gray-500">Internews — USA • Dec 2021 — May 2022</p>
+                <p className="mt-2">Supporting the team to conduct data collection and analysis of main rumors and narratives about COVID-19 in 10 countries under the Rooted in Trust project.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Researcher – Data Journalism</h3>
+                <p className="text-gray-500">JOLT/University of Navarra — Spain • Dec 2018 — Jan 2022</p>
+                <p className="mt-2">Exploring digital technology's potential for journalism, providing theoretical insights, technical innovations, and best practices through collaborative projects with industry partners to enhance the news landscape.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Disinformation Researcher/Consultant</h3>
+                <p className="text-gray-500">Avaaz — USA • Aug 2018 — Nov 2018/Sep 2020 — Mar 2021</p>
+                <p className="mt-2">Supporting the team in research related to information disorder in Brazil. Analyzing methodologies and data from Twitter and Facebook content. Monitoring events and identifying opportunities for campaigns to protect Brazil from mis-/disinformation.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Product Owner/Data Journalist</h3>
+                <p className="text-gray-500">La Nación — Argentina • Jan 2020 — Mar 2020</p>
+                <p className="mt-2">Investigating and identifying requirements to develop the first AI news product. Project management of news products. Reporting stories using data.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Investigative Journalist</h3>
+                <p className="text-gray-500">ethiXBase — Singapore • Jan 2017 — Jan 2019</p>
+                <p className="mt-2">Performing due diligence of companies and special interest persons to verify that there are no issues, scandals, or corruption problems. Development of reports and translation of files (Spanish and Portuguese).</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Communications Assistant</h3>
+                <p className="text-gray-500">Copenhagen Business School (CBS) — Denmark • May 2017 — Feb 2018</p>
+                <p className="mt-2">Development of tutorials and surveys about financial data. Translation of financial data to content that is easily accessible. Interviewing companies about topics related to financial data in their daily business.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Communication and Project Manager</h3>
+                <p className="text-gray-500">Hevea — Denmark • Jun 2017 — Jan 2018</p>
+                <p className="mt-2">Management of the catalogs of products for distributors. Tracking and reporting progress of ongoing communication projects. Production of content for social media platforms.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">Previous Positions</h3>
+                <ul className="mt-2 space-y-2 text-gray-500">
+                  <li>Production Assistant • Olympic Channel/OBS — Brazil • Jan 2016 — Sep 2016</li>
+                  <li>Sports Journalist • Tijuca Tênis Clube — Brazil • 2016</li>
+                  <li>Professional Educator • SENAC SP — Brazil • 2014</li>
+                  <li>Digital Marketing Project Manager • Johnson & Johnson — Brazil • 2013</li>
+                  <li>Assistant for Business Administration • Embraer — Brazil • 2012</li>
+                  <li>Assistant for IT Logistics • Ericsson — Brazil • 2010</li>
+                </ul>
               </div>
             </div>
           </CardContent>
