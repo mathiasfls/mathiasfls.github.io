@@ -1,7 +1,7 @@
 export const SOCIAL_LINKS = {
   scholar: "https://scholar.google.com/citations?user=aj-6hvcAAAAJ&hl=en&oi=ao",
   orcid: "https://orcid.org/0000-0001-8879-7381",
-  linkedin: "https://www.linkedin.com/in/mathiasfls/",
+  linkedin: "https://www.linkedin.com/in/mathiasfelipe/",
   github: "https://github.com/mathiasfls",
   twitter: "https://x.com/Mathias_Felipe"
 } as const;

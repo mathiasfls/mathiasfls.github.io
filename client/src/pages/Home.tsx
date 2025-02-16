@@ -55,7 +55,7 @@ export default function Home() {
           className="shrink-0"
         >
           <img
-            src="/MF.png"
+            src="./MF.png"
             alt={PROFILE.name}
             className="w-[280px] h-[280px] object-cover rounded-lg shadow-lg"
           />
