@@ -7,7 +7,7 @@ const links = [
   { href: "/bio", label: "Bio/CV" },
   { href: "/research", label: "Research" },
   { href: "/journalism", label: "Journalism" },
-  { href: "/awards", label: "Awards" },
+  { href: "/awards", label: "Awards & Grants" },
   { href: "/contact", label: "Contact" },
 ];
 
