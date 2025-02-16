@@ -50,7 +50,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center">
         <Link href="/">
-          <a className="mr-8 text-lg font-bold">Dr. Mathias F. L. Santos</a>
+          <a className="mr-8 text-lg font-bold">Mathias Felipe</a>
         </Link>
         <div className="hidden md:flex md:space-x-4">
           <NavLinks />

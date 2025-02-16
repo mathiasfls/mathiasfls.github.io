@@ -10,8 +10,8 @@ export const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
 export const PROFILE = {
   name: "Dr. Mathias Felipe de Lima Santos",
-  title: "Researcher & Journalist",
-  shortBio: "Digital media researcher and data journalist exploring the intersection of technology, journalism, and social impact.",
-  profileImage: "https://placehold.co/400x400",
+  title: "Digital Media Researcher & Data Journalist",
+  shortBio: "I am a digital media researcher and data journalist exploring the intersection of technology, journalism, and social impact. My research focuses on digital transformation in newsrooms and innovative approaches to storytelling.",
+  profileImage: "https://avatars.githubusercontent.com/u/mathiasfls",
   email: "your.email@example.com"
 } as const;
