@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { PROFILE } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
@@ -67,12 +66,16 @@ export default function Home() {
       >
         <Card className="bg-white">
           <CardContent className="pt-6">
-            <h2 className="text-2xl font-bold mb-4">About Me</h2>
-            {PROFILE.bio.map((paragraph, index) => (
-              <p key={index} className="text-muted-foreground mb-4">
-                {paragraph}
-              </p>
-            ))}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-muted-foreground">{PROFILE.bio[0]}</p>
+                <p className="mt-4 text-muted-foreground">{PROFILE.bio[1]}</p>
+              </div>
+              <div>
+                <p className="text-muted-foreground">{PROFILE.bio[2]}</p>
+                <p className="mt-4 text-muted-foreground">{PROFILE.bio[3]}</p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </motion.div>
