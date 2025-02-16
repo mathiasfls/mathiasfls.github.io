@@ -10,7 +10,7 @@ const articles = [
     date: "August 2023",
     description: "An investigation into the environmental and social impacts of armed groups in Amazon.",
     link: "#",
-    image: "/amazon-underworld.jpg"
+    image: "https://amazonunderworld.org/assets/img/header-title.jpg"
   },
   {
     title: "Big tech is painting itself as journalism's savior. We should tread carefully",
@@ -18,7 +18,7 @@ const articles = [
     date: "September 2024",
     description: "How big tech's 'philanthrocapitalism' could be reshaping the news industry.",
     link: "#",
-    image: "/google-office.jpg"
+    image: "https://www.niemanlab.org/images/google-adobe-stock.jpg"
   }
 ];
 
