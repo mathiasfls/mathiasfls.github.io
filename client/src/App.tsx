@@ -11,11 +11,10 @@ import Awards from "./pages/Awards";
 import MediaCoverage from "./pages/MediaCoverage";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/not-found";
-import { useHashLocation } from 'wouter/use-hash-location';
 
 function Router() {
   return (
-    <Switch hook={useHashLocation}>
+    <Switch>
       <Route path="/" component={Home} />
       <Route path="/bio" component={Bio} />
       <Route path="/research" component={Research} />
