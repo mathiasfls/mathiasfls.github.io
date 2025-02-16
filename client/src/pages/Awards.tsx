@@ -19,7 +19,7 @@ const awards = [
     amount: "BRL 397,960",
   },
   {
-    title: "Max Gressly and Florian Fleck Fund",
+    title: "Max Gressly and Fleck Fund",
     organization: "University of Fribourg",
     year: 2025,
     description: "Research project on the use of generative visual AI in news production, examining impact on representation in Latin America and Europe.",
@@ -136,11 +136,11 @@ const awards = [
     description: "International academic mobility scholarship",
     isAward: true,
   },
-];
+].sort((a, b) => b.year - a.year); // Sort by year in descending order
 
 export default function Awards() {
   return (
-    <div className="space-y-8">
+    <div className="max-w-5xl mx-auto">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -168,12 +168,12 @@ export default function Awards() {
                   <div className="flex items-center gap-2">
                     {item.isAward ? (
                       <Trophy className="h-6 w-6 text-yellow-500" />
-                    ) : (
+                    ) : item.amount ? (
                       <div className="flex items-center gap-2 text-[#4F46E5]">
                         <Coins className="h-5 w-5" />
                         <span className="font-medium">{item.amount}</span>
                       </div>
-                    )}
+                    ) : null}
                   </div>
                 </div>
               </Card>
