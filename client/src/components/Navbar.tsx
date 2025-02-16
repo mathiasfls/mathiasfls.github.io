@@ -21,9 +21,9 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container px-6 flex h-16 items-center justify-between">
         <Link href="/">
-          <a className="text-lg font-bold">Mathias Felipe</a>
+          <a className="text-lg font-bold px-2">Mathias Felipe</a>
         </Link>
         <nav className="flex space-x-6">
           {links.map((link) => (
