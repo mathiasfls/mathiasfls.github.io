@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { PROFILE } from "@/lib/constants";
-import SocialIcons from "@/components/SocialIcons";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="max-w-5xl mx-auto">
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         {/* Left Column - Text Content */}
@@ -17,8 +17,8 @@ export default function Home() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] bg-clip-text text-transparent">
-              {PROFILE.name}
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] bg-clip-text text-transparent leading-tight">
+              Dr. Mathias Felipe<br />de Lima Santos
             </h1>
             <div className="mt-2 space-y-1">
               <p className="text-lg font-medium">{PROFILE.title}</p>
@@ -28,14 +28,14 @@ export default function Home() {
                 </p>
               ))}
             </div>
-            <div className="mt-4 flex flex-col sm:flex-row gap-4">
-              <Button asChild>
+            <div className="mt-4 flex flex-col sm:flex-row gap-2">
+              <Button asChild variant="outline" className="bg-white">
                 <Link href="/publications">
-                  View Publications <ArrowRight className="ml-2 h-4 w-4" />
+                  View Publications
                 </Link>
               </Button>
-              <Button variant="outline" asChild>
-                <Link href="/contact">Contact Me</Link>
+              <Button asChild variant="outline" className="bg-white">
+                <Link href="/contact">Read News Articles</Link>
               </Button>
             </div>
           </motion.div>
@@ -50,7 +50,7 @@ export default function Home() {
           <img
             src={PROFILE.profileImage}
             alt={PROFILE.name}
-            className="w-[280px] h-[280px] object-cover rounded-lg shadow-lg"
+            className="w-[280px] h-[280px] object-cover rounded-lg"
           />
         </motion.div>
       </div>
@@ -60,13 +60,18 @@ export default function Home() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
+        className="mt-8"
       >
-        <h2 className="text-2xl font-bold mb-4">About Me</h2>
-        {PROFILE.bio.map((paragraph, index) => (
-          <p key={index} className="text-muted-foreground mb-4">
-            {paragraph}
-          </p>
-        ))}
+        <Card className="bg-white">
+          <CardContent className="pt-6">
+            <h2 className="text-2xl font-bold mb-4">About Me</h2>
+            {PROFILE.bio.map((paragraph, index) => (
+              <p key={index} className="text-muted-foreground mb-4">
+                {paragraph}
+              </p>
+            ))}
+          </CardContent>
+        </Card>
       </motion.div>
     </div>
   );
