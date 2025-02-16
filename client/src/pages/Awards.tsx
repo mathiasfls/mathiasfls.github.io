@@ -23,7 +23,7 @@ const awards = [
     organization: "University of Fribourg",
     year: 2025,
     description: "Research project on the use of generative visual AI in news production, examining impact on representation in Latin America and Europe.",
-    amount: "5,000 CHF",
+    amount: "CHF 5,000",
   },
   // 2024
   {
