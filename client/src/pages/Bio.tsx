@@ -10,7 +10,7 @@ export default function Bio() {
         animate={{ y: 0, opacity: 1 }}
         className="max-w-3xl mx-auto"
       >
-        <h1 className="text-4xl font-bold text-[#4F46E5] mb-4">Curriculum Vitae</h1>
+        <h1 className="text-4xl font-bold text-[#4F46E5] mb-4">Bio</h1>
 
         <p className="text-gray-600 mb-6">
           A researcher, journalist, and computer scientist specializing in the intersection of journalism,
