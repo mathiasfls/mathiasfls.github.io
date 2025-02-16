@@ -2,37 +2,63 @@ import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PublicationCard from "@/components/PublicationCard";
 
-const publications = [
+const journalArticles = [
   {
     title: "Collaborative journalism and cross-border collaborations for newsafety",
-    authors: "Santos, M. F. L., et al.",
+    authors: "Mesquita, L., de-Lima-Santos, M.F., & Nicoletti, J.",
     journal: "Journalism",
     year: 2025,
-    doi: "https://doi.org/example1",
+    doi: "https://doi.org/10.1177/14648849241312830",
     scopusRank: "Q1",
+    description: "Navigating security and solidarity mechanisms in cooperative practices in Latin American news media.",
   },
   {
     title: "Visual political communication on Instagram",
-    authors: "Santos, M. F. L., et al.",
+    authors: "de-Lima-Santos, M.F. Gonçalves, I., Quiles, M.G. et al.",
     journal: "EPJ Data Science",
     year: 2024,
-    doi: "https://doi.org/example2",
+    doi: "https://doi.org/10.1140/epjds/s13688-024-00502-0",
+    scopusRank: "Q1",
+    description: "A comparative study of Brazilian presidential elections.",
   },
   {
     title: "Bridging the AI Divide: Human and Responsible AI in News and Media Industries",
-    authors: "Santos, M. F. L., et al.",
+    authors: "de-Lima-Santos, M.F. & Jamil, S.",
     journal: "Emerging Media",
     year: 2024,
-    doi: "https://doi.org/example3",
+    doi: "https://doi.org/10.1177/27523543241291229",
+    description: "Research on responsible AI implementation in news and media industries.",
+  }
+];
+
+const bookChapters = [
+  {
+    title: "Brazil",
+    authors: "de-Lima-Santos, M.F.",
+    journal: "Media Compass",
+    year: 2024,
+    doi: "https://doi.org/10.1002/9781394196272.ch20",
+    editors: "A. K. Schapals & C. Pentzold"
   },
   {
-    title: "Google News Initiative Innovation Challenge in Latin America",
-    authors: "Santos, M. F. L., et al.",
-    journal: "Journal of Media Business Studies",
+    title: "Setting an Agenda to Tackle Environmental Issues with Data and Collaboration",
+    authors: "de-Lima-Santos, M.F.",
+    journal: "Journalism and Reporting Synergistic Effects of Climate Change",
     year: 2024,
-    doi: "https://doi.org/example4",
-    scopusRank: "Q2",
+    doi: "https://doi.org/10.4324/9781032627526-17",
+    editors: "Gutsche Jr., R. E. & J. Pinto",
+    pages: "304–324"
   },
+  {
+    title: "Reshaping Journalism Practices through Collaboration",
+    authors: "Mesquita, L., Sanseverino, G. G., de-Lima-Santos, M.F., & Carpes, G.",
+    journal: "Geo Spaces of Communication Research",
+    year: 2024,
+    doi: "https://doi.org/10.1108/S2050-206020240000026011",
+    editors: "L. Robinson, K. Moles, S. V. Moreira, & J. Schulz",
+    pages: "127–141",
+    description: "An Analysis of Three Collaborative Projects in the Americas"
+  }
 ];
 
 export default function Research() {
@@ -52,7 +78,7 @@ export default function Research() {
           </TabsList>
 
           <TabsContent value="journal" className="space-y-6">
-            {publications.map((pub) => (
+            {journalArticles.map((pub) => (
               <motion.div
                 key={pub.doi}
                 initial={{ y: 20, opacity: 0 }}
@@ -63,8 +89,16 @@ export default function Research() {
             ))}
           </TabsContent>
 
-          <TabsContent value="chapters">
-            <p className="text-gray-600">Book chapters will be listed here.</p>
+          <TabsContent value="chapters" className="space-y-6">
+            {bookChapters.map((pub) => (
+              <motion.div
+                key={pub.doi}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+              >
+                <PublicationCard {...pub} />
+              </motion.div>
+            ))}
           </TabsContent>
         </Tabs>
       </motion.div>
