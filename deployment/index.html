@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Mathias Felipe de Lima Santos</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <style data-vite-theme="" data-inject-first="">:root {
       --background: 0 0% 100%;
 --foreground: 20 14.3% 4.1%;
@@ -22,8 +40,8 @@
 --destructive-foreground: 60 9.1% 97.8%;
 --ring: 20 14.3% 4.1%;
 --radius: 0.5rem;
-  }
-  .dark {
+    }
+    .dark {
       --background: 240 10% 3.9%;
 --foreground: 0 0% 98%;
 --muted: 240 3.7% 15.9%;
@@ -44,12 +62,10 @@
 --destructive-foreground: 0 0% 98%;
 --ring: 240 4.9% 83.9%;
 --radius: 0.5rem;
-  }</style>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" crossorigin src="/assets/index-CHRe0jdl.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CArnwr-Z.css">
+    }</style>
+    <base href="https://mathiasfls.github.io/">
+    <script type="module" crossorigin src="assets/index-CHRe0jdl.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-CArnwr-Z.css">
   </head>
   <body>
     <div id="root"></div>
