@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
   twitter: "https://twitter.com/TWITTER_ID"
 } as const;
 
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/mleqegjw";
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzzdjwyv";
 
 export const PROFILE = {
   name: "Dr. Mathias Felipe de Lima Santos",
