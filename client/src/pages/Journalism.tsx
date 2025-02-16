@@ -16,7 +16,7 @@ const articles = [
     title: "Big tech is painting itself as journalism's savior. We should tread carefully",
     publication: "NiemanLab",
     date: "September 2024",
-    description: "How big tech's "philanthrocapitalism" could be reshaping the news industry.",
+    description: "How big tech's 'philanthrocapitalism' could be reshaping the news industry.",
     link: "#",
     image: "/google-office.jpg"
   }
