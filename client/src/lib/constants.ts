@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
   twitter: "https://twitter.com/TWITTER_ID"
 } as const;
 
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/mleqegjw";
 
 export const PROFILE = {
   name: "Dr. Mathias Felipe de Lima Santos",
@@ -22,5 +22,10 @@ export const PROFILE = {
     "He has been recognized by The Australian and The Australian Academy of the Humanities as a rising star in the field of Communication and Cultural Studies. He is actively engaged in research projects in the Global South, examining the influence of AI and digital platforms on media. He has secured prestigious journalism awards for his work with industry partners.",
     "He has consistently bridged the gap between academia and real-world impact, with his research on COVID-19 disinformation cited by policymakers and organizations. He has developed projects with media outlets such as Al Jazeera, BBC, La Nación, and ProPublica. He has served on the editorial board of Digital Journalism journal and has been elected Secretary for the International Communication Association's Journalism Studies Division."
   ],
-  email: "your.email@example.com"
+  email: "mathias.felipe@unifesp.br",
+  office: {
+    name: "School of Communication, Society and Culture (SCSC)",
+    institution: "Macquarie University",
+    address: "Macquarie Park, NSW 2109"
+  }
 } as const;

@@ -13,10 +13,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { FORMSPREE_ENDPOINT, PROFILE } from "@/lib/constants";
-import { Mail } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -61,24 +61,18 @@ export default function Contact() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="space-y-8"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle>Contact Me</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Mail className="h-4 w-4" />
-              <a href={`mailto:${PROFILE.email}`} className="hover:text-primary">
-                {PROFILE.email}
-              </a>
-            </div>
+        <h1 className="text-4xl font-bold text-[#4F46E5] mb-4">Get in Touch</h1>
+        <p className="text-gray-600 mb-8">Have a question or want to collaborate? I'd love to hear from you.</p>
 
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Contact Form */}
+          <Card className="p-6">
+            <h2 className="text-xl font-semibold mb-6">Send a Message</h2>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -123,13 +117,49 @@ export default function Contact() {
                   )}
                 />
 
-                <Button type="submit" disabled={form.formState.isSubmitting}>
+                <Button 
+                  type="submit" 
+                  disabled={form.formState.isSubmitting}
+                  className="w-full bg-[#4F46E5] hover:bg-[#4338CA]"
+                >
+                  <Send className="h-4 w-4 mr-2" />
                   Send Message
                 </Button>
               </form>
             </Form>
-          </CardContent>
-        </Card>
+          </Card>
+
+          {/* Contact Info */}
+          <Card className="p-6">
+            <h2 className="text-xl font-semibold mb-6">Contact Info</h2>
+            <div className="space-y-6">
+              <div className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-[#4F46E5] mt-1" />
+                <div>
+                  <h3 className="font-medium mb-1">Email</h3>
+                  <a 
+                    href={`mailto:${PROFILE.email}`} 
+                    className="text-gray-600 hover:text-[#4F46E5]"
+                  >
+                    {PROFILE.email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-[#4F46E5] mt-1" />
+                <div>
+                  <h3 className="font-medium mb-1">Office</h3>
+                  <div className="text-gray-600">
+                    <p>{PROFILE.office.name}</p>
+                    <p>{PROFILE.office.institution}</p>
+                    <p>{PROFILE.office.address}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
       </motion.div>
     </div>
   );
