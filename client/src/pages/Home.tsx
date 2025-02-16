@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { PROFILE } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
+import SocialIcons from "@/components/SocialIcons";
 
 export default function Home() {
   return (
@@ -27,7 +28,10 @@ export default function Home() {
                 </p>
               ))}
             </div>
-            <div className="mt-4 flex flex-col sm:flex-row gap-2">
+            <div className="mt-4 mb-4">
+              <SocialIcons />
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2">
               <Button 
                 asChild 
                 className="bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white border-0 hover:opacity-90"

@@ -1,5 +1,4 @@
 import { useLocation } from "wouter";
-import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   const [location] = useLocation();
@@ -7,8 +6,9 @@ export default function Footer() {
   return (
     <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container py-8">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <div className="flex flex-col items-center gap-4 md:flex-row">
+        <div className="flex flex-col items-center space-y-6">
+          <h3 className="text-lg font-medium text-muted-foreground">Affiliated Institutions</h3>
+          <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
             <img 
               src="https://www.mq.edu.au/__data/assets/image/0024/1215567/MQ-Logo-Standard.svg" 
               alt="Macquarie University"
@@ -20,9 +20,8 @@ export default function Footer() {
               className="h-12"
             />
           </div>
-          <SocialIcons />
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Dr. Mathias Felipe de Lima Santos
+            © {new Date().getFullYear()} Dr. Mathias Felipe de Lima Santos. All rights reserved.
           </div>
         </div>
       </div>
