@@ -36,12 +36,12 @@ export default function Home() {
                 asChild 
                 className="bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white border-0 hover:opacity-90"
               >
-                <Link href="/publications">
+                <Link href="/research">
                   View Publications
                 </Link>
               </Button>
               <Button asChild variant="outline" className="bg-white border-gray-200">
-                <Link href="/contact">Read News Articles</Link>
+                <Link href="/journalism">Read News Articles</Link>
               </Button>
             </div>
           </motion.div>
