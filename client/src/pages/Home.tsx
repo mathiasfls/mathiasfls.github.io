@@ -29,12 +29,15 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-4 flex flex-col sm:flex-row gap-2">
-              <Button asChild variant="outline" className="bg-white">
+              <Button 
+                asChild 
+                className="bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white border-0 hover:opacity-90"
+              >
                 <Link href="/publications">
                   View Publications
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="bg-white">
+              <Button asChild variant="outline" className="bg-white border-gray-200">
                 <Link href="/contact">Read News Articles</Link>
               </Button>
             </div>
@@ -48,7 +51,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={PROFILE.profileImage}
+            src="/MF.png"
             alt={PROFILE.name}
             className="w-[280px] h-[280px] object-cover rounded-lg"
           />
