@@ -14,6 +14,16 @@ interface PublicationCardProps {
   pages?: string;
 }
 
+function formatAuthors(authors: string) {
+  // Split by comma and wrap "de-Lima-Santos, M.F." in strong tag
+  return authors.split(', ').map(author => {
+    if (author.trim() === "de-Lima-Santos, M.F.") {
+      return `<strong>${author}</strong>`;
+    }
+    return author;
+  }).join(', ');
+}
+
 export default function PublicationCard({
   title,
   authors,
@@ -37,7 +47,10 @@ export default function PublicationCard({
               {pages && <span className="text-gray-500">• pp. {pages}</span>}
             </div>
             {scopusRank && <Badge variant="secondary">{scopusRank}</Badge>}
-            <p className="text-sm text-gray-500">{authors}</p>
+            <p 
+              className="text-sm text-gray-500"
+              dangerouslySetInnerHTML={{ __html: formatAuthors(authors) }}
+            />
             {editors && (
               <p className="text-sm text-gray-500">
                 In {editors} (Eds.)
