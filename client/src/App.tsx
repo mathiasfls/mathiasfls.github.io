@@ -8,6 +8,7 @@ import Bio from "./pages/Bio";
 import Research from "./pages/Research";
 import Journalism from "./pages/Journalism";
 import Awards from "./pages/Awards";
+import MediaCoverage from "./pages/MediaCoverage";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/not-found";
 
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/research" component={Research} />
       <Route path="/journalism" component={Journalism} />
       <Route path="/awards" component={Awards} />
+      <Route path="/media-coverage" component={MediaCoverage} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

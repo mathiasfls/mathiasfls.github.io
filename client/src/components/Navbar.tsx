@@ -8,6 +8,7 @@ const links = [
   { href: "/research", label: "Research" },
   { href: "/journalism", label: "Journalism" },
   { href: "/awards", label: "Awards & Grants" },
+  { href: "/media-coverage", label: "Media Coverage" },
   { href: "/contact", label: "Contact" },
 ];
 
