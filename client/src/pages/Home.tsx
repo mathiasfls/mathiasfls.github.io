@@ -63,7 +63,7 @@ export default function Home() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="mt-8"
+        className="mt-4"
       >
         <Card className="bg-white">
           <CardContent className="pt-6">
