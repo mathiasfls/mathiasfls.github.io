@@ -62,15 +62,15 @@ export default function Bio() {
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold">AI Mentor (Consultant)</h3>
-                <p className="text-gray-500">Bastion/Google • Sep 2024 — Now</p>
-                <p className="mt-2">Responsible for mentoring Australian media organizations in the deployment of Generative AI tools in their newsrooms. Guiding companies such as Private Media, Australian Chinese News, North East Media, and Gazette News in adopting AI to improve storytelling, optimize workflows, and enhance audience engagement.</p>
-              </div>
-
-              <div>
                 <h3 className="font-semibold">Lecturer (Assistant Professor)</h3>
                 <p className="text-gray-500">Macquarie University • Mar 2024 — Now</p>
                 <p className="mt-2">Responsible for researching and teaching multiplatform journalism, focusing on data-driven storytelling, media technology and innovation. Developed and delivered courses integrating theoretical frameworks with practical skills, preparing students for the evolving media landscape.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">AI Mentor (Consultant)</h3>
+                <p className="text-gray-500">Bastion/Google • Sep 2024 — Feb 2025</p>
+                <p className="mt-2">Responsible for mentoring Australian media organizations in the deployment of Generative AI tools in their newsrooms. Guiding companies such as Private Media, Australian Chinese News, North East Media, and Gazette News in adopting AI to improve storytelling, optimize workflows, and enhance audience engagement.</p>
               </div>
 
               <div>

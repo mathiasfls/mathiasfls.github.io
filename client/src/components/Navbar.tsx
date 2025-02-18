@@ -1,6 +1,9 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
 const links = [
   { href: "/", label: "Home" },
@@ -14,6 +17,7 @@ const links = [
 
 export default function Navbar() {
   const [location] = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <motion.header
@@ -25,7 +29,22 @@ export default function Navbar() {
         <Link href="/">
           <a className="text-lg font-bold px-2">Mathias Felipe</a>
         </Link>
-        <nav className="flex space-x-6">
+
+        {/* Mobile menu button */}
+        <Button
+          variant="ghost"
+          className="p-2 md:hidden"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </Button>
+
+        {/* Desktop navigation */}
+        <nav className="hidden md:flex space-x-6">
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
               <a
@@ -41,6 +60,29 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
+
+        {/* Mobile navigation */}
+        {mobileMenuOpen && (
+          <div className="absolute top-16 left-0 right-0 bg-background border-b md:hidden">
+            <nav className="container px-6 py-4 flex flex-col space-y-4">
+              {links.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  <a
+                    className={cn(
+                      "text-sm font-medium transition-colors hover:text-primary px-2 py-1",
+                      location === link.href
+                        ? "text-primary"
+                        : "text-muted-foreground"
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </Link>
+              ))}
+            </nav>
+          </div>
+        )}
       </div>
     </motion.header>
   );
