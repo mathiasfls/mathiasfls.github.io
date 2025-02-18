@@ -18,16 +18,16 @@ const services = [
     description: "Conducting research projects, academic partnerships, and grant writing services focusing on media technology, journalism innovation, and information disorder.",
   },
   {
-    title: "Platform Governance & Policy Advice",
-    description: "Expert consultation on platform governance, content moderation strategies, and policy development for addressing misinformation and online harm.",
+    title: "Platform Governance, Information  & Policy Advice",
+    description: "Expert consultation on platform governance, content moderation strategies, and policy development for addressing mis/disinformation and online harms.",
   },
 ];
 
 const achievements = [
-  "Led AI implementation at La Nación (Argentina), pioneering computer vision for environmental reporting",
-  "Developed innovative WhatsApp-based LLM solutions for InfoAmazonia's audience engagement",
-  "Mentored Australian media organizations in AI adoption through Google's initiative",
-  "Co-founded the Digital Media and Society Observatory (DMSO)",
+  "Mentored Australian media organizations in AI adoption through Google News Initiative Generative AI project",
+  "Led the PlenaMata project, which provides deforestation data on Amazon, a partnership of Natura and MapBiomas",
+  "Developed an innovative WhatsApp-based LLM solution for InfoAmazonia's audience engagement",
+  "Led one of the first projects using computer vision for environmental reporting at La Nación (Argentina), driving their AI implementation",
 ];
 
 export default function Consulting() {
