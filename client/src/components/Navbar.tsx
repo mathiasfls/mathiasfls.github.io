@@ -30,19 +30,6 @@ export default function Navbar() {
           <a className="text-lg font-bold px-2">Mathias Felipe</a>
         </Link>
 
-        {/* Mobile menu button */}
-        <Button
-          variant="ghost"
-          className="p-2 md:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </Button>
-
         {/* Desktop navigation */}
         <nav className="hidden md:flex space-x-6">
           {links.map((link) => (
@@ -61,28 +48,42 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile navigation */}
-        {mobileMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-background border-b md:hidden">
-            <nav className="container px-6 py-4 flex flex-col space-y-4">
-              {links.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  <a
-                    className={cn(
-                      "text-sm font-medium transition-colors hover:text-primary px-2 py-1",
-                      location === link.href
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    )}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                </Link>
-              ))}
-            </nav>
-          </div>
-        )}
+        {/* Mobile menu button and navigation */}
+        <div className="md:hidden">
+          <Button
+            variant="ghost"
+            className="p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </Button>
+
+          {mobileMenuOpen && (
+            <div className="absolute top-16 left-0 right-0 bg-background border-b">
+              <nav className="container px-6 py-4 flex flex-col space-y-4">
+                {links.map((link) => (
+                  <Link key={link.href} href={link.href}>
+                    <a
+                      className={cn(
+                        "text-sm font-medium transition-colors hover:text-primary px-2 py-1",
+                        location === link.href
+                          ? "text-primary"
+                          : "text-muted-foreground"
+                      )}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          )}
+        </div>
       </div>
     </motion.header>
   );
