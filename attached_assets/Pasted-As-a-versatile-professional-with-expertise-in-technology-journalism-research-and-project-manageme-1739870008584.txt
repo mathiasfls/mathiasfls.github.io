@@ -1,0 +1,16 @@
+As a versatile professional with expertise in technology, journalism, research, and project management, I offer consulting services, including AI-driven solutions, tailored to your organization's needs. My specialization in AI, data journalism, and misinformation equips me to analyze complex information and develop innovative solutions that can help organizations achieve their goals responsibly. Whether you need assistance with research projects, efficient product coordination, training programs for journalists or insightful consultancy for cutting-edge AI-powered media projects, I bring a wealth of experience to the table. Previously, I provided solutions that empower organizations to maximize efficiencies in the Americas and Europe. Until May 2024, I was part of the Human(e) AI project at the University of Amsterdam, focusing on the responsible use of AI in media, particularly journalism. I am currently working at Macquarie University to research and teach AI and media-related topics.
+
+
+I have had the opportunity to work on one of the first AI projects at La Nación, Argentina. Using computer vision, we mapped the development of solar farms in Argentina using Sentinel 2 open-access satellite imagery. As part of the brand-new environmental reporting project, this project brought new ways to leverage the power of AI for investigative reporting, analyzing data and identifying patterns at a much larger scale than ever before. My most recent AI project focuses on leveraging Large Language Models (LLMs) on messaging apps, particularly WhatsApp, to enhance audience engagement and deliver content that is relevant to the InfoAmazonia's public, all while avoiding the creation of filter bubbles.
+
+
+Some companies I have worked with Natura, InfoAmazonia, La Nación (Argentina), RAI,
+Avaaz, ICFJ, CI&T (Box1824), Internews, Google, Bastion.
+
+Clearly list what you offer. Example categories:
+* AI & Data Strategy for Media
+* Media and Journalism Innovation
+* Media’s Business Strategies and Business  Models
+* Research Projects
+* Research & Grant Writing
+* Platform Governance & Policy Advice
