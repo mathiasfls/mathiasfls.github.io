@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Bio from "./pages/Bio";
+import Consulting from "./pages/Consulting";
 import Research from "./pages/Research";
 import Journalism from "./pages/Journalism";
 import Awards from "./pages/Awards";
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/bio" component={Bio} />
+      <Route path="/consulting" component={Consulting} />
       <Route path="/research" component={Research} />
       <Route path="/journalism" component={Journalism} />
       <Route path="/awards" component={Awards} />
